@@ -1,0 +1,5 @@
+#!/bin/bash
+
+source environment.sh && \
+echo "centos${CONTAINER_CENTOS_VERSION}-slurm${CONTAINER_SLURM_VERSION}-py${CONTAINER_PYTHON_VERSION}"
+exit

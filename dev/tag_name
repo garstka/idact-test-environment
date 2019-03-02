@@ -1,0 +1,5 @@
+#!/bin/bash
+
+source environment.sh && \
+echo $(dev/branch_name)-${LAST_UPDATED}
+exit

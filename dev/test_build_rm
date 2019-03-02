@@ -1,0 +1,4 @@
+#!/bin/bash
+
+dev/test_build --rm --no-cache "$@"
+exit

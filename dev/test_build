@@ -1,0 +1,6 @@
+#!/bin/bash
+
+export DOCKERFILE_PATH=Dockerfile
+export IMAGE_NAME=$(dev/image_name)
+hooks/build "$@"
+exit

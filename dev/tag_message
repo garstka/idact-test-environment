@@ -1,0 +1,9 @@
+#!/bin/bash
+
+source environment.sh && \
+echo CentOS version: ${CONTAINER_CENTOS_VERSION} && \
+echo Slurm version: ${CONTAINER_SLURM_VERSION} && \
+echo Python version: ${CONTAINER_PYTHON_VERSION} && \
+echo User count: ${CONTAINER_USERS} && \
+echo Last updated: ${LAST_UPDATED}
+exit

@@ -1,0 +1,6 @@
+#!/bin/bash
+# Pushes this tag as [branch name]-latest
+
+LATEST_TAG=$(dev/branch_name)-latest
+docker tag $IMAGE_NAME $DOCKER_REPO:$LATEST_TAG
+docker push $DOCKER_REPO:$LATEST_TAG

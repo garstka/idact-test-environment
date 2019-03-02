@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo garstka/idact-test-environment:$(dev/tag_name)
+exit
