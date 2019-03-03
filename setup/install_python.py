@@ -7,19 +7,19 @@ import subprocess
 
 def get_commands_install_python():
     yum_rpm = (
-        "https://centos{}.iuscommunity.org/"
+        "https://centos{0}.iuscommunity.org/"
         "ius-release.rpm").format(os.environ['CONTAINER_CENTOS_VERSION'])
 
     install_rpm = ['yum', '-y', 'install', yum_rpm]
 
-    python_package = "python{}u".format(
+    python_package = "python{0}u".format(
         os.environ['CONTAINER_PYTHON_VERSION'].replace('.', ''))
 
     install_packages = ['yum', '-y', 'install',
                         'sqlite-devel',
                         python_package,
-                        "{}-pip".format(python_package),
-                        "{}-devel".format(python_package)]
+                        "{0}-pip".format(python_package),
+                        "{0}-devel".format(python_package)]
 
     return [install_rpm,
             install_packages]

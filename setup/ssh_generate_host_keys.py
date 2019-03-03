@@ -25,8 +25,8 @@ def main():
     for key_type in OPTIONAL_KEY_TYPES:
         try:
             subprocess.check_call(get_command_generate_key(key_type=key_type))
-        except subprocess.CalledProcessError as e:
-            traceback.print_exc(e)
+        except subprocess.CalledProcessError:
+            traceback.print_exc()
 
 
 if __name__ == '__main__':
